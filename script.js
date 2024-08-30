@@ -43,17 +43,17 @@ console.log(over70and120);
 // SNACK 3
 
 /**
-Creare un array di oggetti: -V-
-Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. -V-
+Creare un array di oggetti: 
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso. 
 Stampare in console la bici con peso minore utilizzando destructuring e template literal
  */
 
 const bikes = [
-    { name: 'Bianchi', weight: 11 },
-    { name: 'Atala', weight: 7 },
-    { name: 'Olmo', weight: 10 },
-    { name: 'Casati', weight: 6 },
-    { name: 'Colnago', weight: 8 }
+    { model: 'Bianchi', weight: 11 },
+    { model: 'Atala', weight: 7 },
+    { model: 'Olmo', weight: 10 },
+    { model: 'Casati', weight: 6 },
+    { model: 'Colnago', weight: 8 }
 ];
 
 bikes.sort(function (a, b) {     // SO' CHE AVRO' UN ARRAY CON AL PRIMO POSTO (INDICE 0) LA BICI PIÙ LEGGERA
@@ -63,22 +63,7 @@ bikes.sort(function (a, b) {     // SO' CHE AVRO' UN ARRAY CON AL PRIMO POSTO (I
 console.log(bikes[0]); // STAMPO PER ESSERNE SICURO
 
 
-let { name, weight } = bikes[0]; // Destructuring
-console.log(`La bici più leggera è la ${name} con peso di ${weight} kg `)  // Stampo in console con un template literal
+let { model, weight } = bikes[0]; // Destructuring
+console.log(`La bici più leggera è la ${model} con peso di ${weight} kg `)  // Stampo in console con un template literal
 
 
-
-
-
-
-//console.log(`La bicicletta più leggera è la ${name} e pesa ${weight} kg`)
-
-// SNACK 4
-
-/**
-Creare un array di oggetti di squadre di calcio.
-Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
-Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
-Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
- */
