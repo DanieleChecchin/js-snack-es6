@@ -56,14 +56,15 @@ const bikes = [
     { name: 'Colnago', weight: 8 }
 ];
 
-bikes.sort(function (a, b) {
+bikes.sort(function (a, b) {     // SO' CHE AVRO' UN ARRAY CON AL PRIMO POSTO (INDICE 0) LA BICI PIÙ LEGGERA
     return a.weight - b.weight;
 });
 
-console.log(bikes[0]);
+console.log(bikes[0]); // STAMPO PER ESSERNE SICURO
 
-let { name, weight } = bikes;
-console.log(` `)
+
+let { name, weight } = bikes[0]; // Destructuring
+console.log(`La bici più leggera è la ${name} con peso di ${weight} kg `)  // Stampo in console con un template literal
 
 
 
