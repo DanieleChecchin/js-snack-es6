@@ -9,15 +9,11 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
  */
 
 // FUNZIONE per generare un numero random per i punti fatti ed i falli subiti
-let result = 0;
+
 const getRandomNumber = () => {
     const max = 30;
-    result = Math.floor(Math.random() * max) + 1;
-    return result;
+    return Math.floor(Math.random() * max) + 1;
 }
-getRandomNumber();
-
-
 
 // Creo un array di squadre di calcio
 
